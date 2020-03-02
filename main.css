@@ -1,14 +1,17 @@
 body{
     display:grid;
-    background-color: darkslategrey;
+    background-color: rgb(55, 141, 141);
 
 
     grid-template: 
         "headline headline" 100px 
-        "income status" 50px
-        "prov plan" 50px
-        "submit clear" 50px
-        "run spa" 50px;
+        "input1 input2" 50px
+        "input3 input4" 50px
+        "input5 input6" 50px
+        "input7 input8" 50px
+        "input9 input10" 50px
+        "input11 input12" 50px
+        "input13 input14" 50px
 }
 
 
@@ -16,7 +19,7 @@ body{
 
 h1{
     text-align: center;
-    color: red;
+    color: blue;
     grid-area:headline;
 }
 
@@ -28,29 +31,38 @@ h4{
 
 
 div[id="income_input"] {
-    grid-area: income;
+    grid-area: input1;
 }
 
 div[id="status_input"] {
-    grid-area: status;
+    grid-area: input2;
 }
 
 div[id="submit"] {
-    grid-area: submit;
+    grid-area: input8;
 }
 
 div[id="insurance_input"] {
-    grid-area: prov;
+    grid-area: input3;
 }
 
 div[id="plan_input"] {
-    grid-area: plan;
+    grid-area: input4;
 }
 
 div[id="clear"] {
-    grid-area: clear;
+    grid-area: input7;
 }
 
 div[id="adv"] {
-    grid-area: run;
+    grid-area: input9;
 }
+
+div[id="placeh"] {
+    grid-area: input6;
+}
+
+div[id="dep"] {
+    grid-area: input11;
+}
+

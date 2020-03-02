@@ -6,60 +6,110 @@
     </head>
 
     <body>
+
+
+
        
         <h1>HealthCare Calculator</h1>
 
 
-
+        <script src="main.js"></script>
 
             <div id="income_input">
-                <input type="textarea" value="Enter Income">
+            <center>
+            <input id = "text_income_input" type="textarea" style = "width:150px;"  value="Enter Your Income (in $)">
+            </center>
 
             </div>
 
             <div id="status_input">
-                <input type="textarea" value="Select Filing Status">
+            <center>    
+                <select id="statii">
+                    <option value="Select Your Tax Status">Select Your Tax Status</option>
+                    <option value="Single">Red</option>
+                    <option value="Married">Blue</option>
+                    <option value="Head of Household">United</option>
+                    <option value="Other">Other</option>
+                </select>
+            </center>
             </div>
 
             <div id="insurance_input">
-
-                <label for="inss"> Choose your Insurance Provider:</label>
-
+            <center>
                 <select id="provs">
-                <option value="Red">Red</option>
-                <option value="Blue">Blue</option>
-                <option value="United">United</option>
-                <option value="Other">Other</option>
+                    <option value="Select Your Insurance Provider">Select Your Insurance Provider</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="United">United</option>
+                    <option value="Other">Other</option>
                 </select>
+            </center>
             </div>
-
+            
             <div id="plan_input">
-                <label for="inss"> Choose your Insurance Plan:</label>
-
+            <center>
+                
                 <select id="plans">
-                <option value="Red">Red</option>
-                <option value="Blue">Blue</option>
-                <option value="United">United</option>
-                <option value="Other">Other</option>
+                    <option value="Select Your Insurance Plan">Select Your Insurance Plan</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="United">United</option>
+                    <option value="Other">Other</option>
                 </select>
+            </center>
             </div>
-
+            
+            <div id="fam_input">
+            <center>
+                <input id = "text_fam_input" type="textarea" style ="width:250px;" value="How many family members do you have?">
+            </center>
+            </div>
+            
             <div id = "submit">
-            <button> Submit </button>
+            <center>
+                
+                <button> Submit </button>
+            </center>
             </div>
 
             <div id = "clear">
-            <button> Clear </button>
+            <center>
+
+                <button onclick="clearInputs()"> Start Over </button>
+            </center>
             </div>
 
             <div id = "adv">
-            <button> Advanced Options </button>
+            <center>
+
+                <button> Advanced Options </button>
+            </center>
             </div>
+
+            <div id = "placeh">
+            <center>
+
+                <input id = "placei" type="textarea"  value="Nothing yet">
+            </center>
+
+            </div>
+
+            <div id = "dep">
+            <center>
+                
+                <input id = "depi" type="textarea" style = "display: none;" value ="Advanced 1">
+            </center>
+
+            </div>
+            
+            
+            
 
 
             
 
-       
+           
+
     </body>
 </html>
 
