@@ -12,94 +12,79 @@
        
         <h1>HealthCare Calculator</h1>
 
+        <div id = "results_headline" style = "display: none;"> 
+            <h2>Here's your results:</h2> 
+        </div>
+
 
         <script src="main.js"></script>
 
-            <div id="income_input">
-            <center>
-            <input id = "text_income_input" type="textarea" style = "width:150px;"  value="Enter Your Income (in $)">
-            </center>
+            <div id="income_input" >
+            <input id = "text_income_input" type="textarea" style = "width:150px;"  onClick="SelectAll('text_income_input');" value="Enter Your Income (in $)">
 
             </div>
 
             <div id="status_input">
-            <center>    
-                <select id="statii">
+                <select id="status_select">
                     <option value="Select Your Tax Status">Select Your Tax Status</option>
                     <option value="Single">Red</option>
                     <option value="Married">Blue</option>
                     <option value="Head of Household">United</option>
                     <option value="Other">Other</option>
                 </select>
-            </center>
             </div>
 
             <div id="insurance_input">
-            <center>
-                <select id="provs">
+           
+                <select id="providers_select">
                     <option value="Select Your Insurance Provider">Select Your Insurance Provider</option>
                     <option value="Red">Red</option>
                     <option value="Blue">Blue</option>
                     <option value="United">United</option>
                     <option value="Other">Other</option>
                 </select>
-            </center>
+         
             </div>
             
             <div id="plan_input">
-            <center>
-                
-                <select id="plans">
+
+                <select id="plans_select">
                     <option value="Select Your Insurance Plan">Select Your Insurance Plan</option>
                     <option value="Red">Red</option>
                     <option value="Blue">Blue</option>
                     <option value="United">United</option>
                     <option value="Other">Other</option>
                 </select>
-            </center>
+       
             </div>
             
             <div id="fam_input">
-            <center>
-                <input id = "text_fam_input" type="textarea" style ="width:250px;" value="How many family members do you have?">
-            </center>
+           
+                <input id = "text_fam_input" type="textarea" onClick="SelectAll('text_fam_input');" 
+                    style ="width:250px;" value="How many family members do you have?">
+         
             </div>
             
             <div id = "submit">
-            <center>
-                
-                <button> Submit </button>
-            </center>
+            
+                <button onclick="hideSubmit()"> Submit </button>
+            
             </div>
 
             <div id = "clear">
-            <center>
-
                 <button onclick="clearInputs()"> Start Over </button>
-            </center>
             </div>
 
-            <div id = "adv">
-            <center>
-
-                <button> Advanced Options </button>
-            </center>
+            <div id = "advanced">
+                <button onclick="toggleAdvanced()"> Advanced Options </button>
             </div>
 
-            <div id = "placeh">
-            <center>
-
-                <input id = "placei" type="textarea"  value="Nothing yet">
-            </center>
-
+            <div id = "placeholder">
+                <input id = "placeholder_input" type="textarea"  value="Nothing yet">
             </div>
 
-            <div id = "dep">
-            <center>
-                
-                <input id = "depi" type="textarea" style = "display: none;" value ="Advanced 1">
-            </center>
-
+            <div id = "advanced1">
+                <input id = "advanced1_input" type="textarea" style = "display: none;" value ="Advanced 1">
             </div>
             
             

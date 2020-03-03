@@ -23,46 +23,70 @@ h1{
     grid-area:headline;
 }
 
-h4{
+div[id ="results_headline"] {
     color: black;
     text-align: center; 
+    grid-area:input1;
+    
 }
 
 
 
 div[id="income_input"] {
     grid-area: input1;
+    text-align: center; 
+
 }
 
 div[id="status_input"] {
     grid-area: input2;
+    text-align: center; 
+
 }
 
 div[id="submit"] {
     grid-area: input8;
+    text-align: center; 
+
 }
 
 div[id="insurance_input"] {
     grid-area: input3;
+    text-align: center; 
+
 }
 
 div[id="plan_input"] {
     grid-area: input4;
+    text-align: center; 
+
 }
 
 div[id="clear"] {
     grid-area: input7;
+    text-align: center; 
+
 }
 
-div[id="adv"] {
+div[id="advanced"] {
     grid-area: input9;
+    text-align: center; 
+
 }
 
-div[id="placeh"] {
+div[id="placeholder"] {
     grid-area: input6;
+    text-align: center;
 }
 
-div[id="dep"] {
+div[id="advanced1"] {
     grid-area: input11;
+    text-align: center; 
+}
+
+div[id="fam_input"] {
+    grid-area: input5;
+    text-align: center; 
+
 }
 
