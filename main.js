@@ -19,9 +19,38 @@ function hideSubmit()
     document.getElementById("placeholder").style.display = "none";
     document.getElementById("clear").style.display = "none";
     document.getElementById("submit").style.display = "none";
-    document.getElementById("advanced").style.display = "none";
+    document.getElementById("advanced_button").style.display = "none";
+    document.getElementById("advanced1").style.display = "none";
     document.getElementById("results_headline").style.display = "inline-block";    
+    document.getElementById("restart_button").style.display = "inline-block";    
+    document.getElementById("results_headline").style.display = "inline-block";    
+    document.getElementById("plan1_title").style.display = "inline-block";    
+    document.getElementById("plan2_title").style.display = "inline-block";    
+    document.getElementById("plan3_title").style.display = "inline-block";    
+    document.getElementById("plan4_title").style.display = "inline-block";    
     results_headline.style.display = "inline";
+}
+
+function hideRestart()
+{
+    document.getElementById("text_income_input").style.display = "inline-block";
+    document.getElementById("status_select").style.display = "inline-block";
+    document.getElementById("providers_select").style.display = "inline-block";
+    document.getElementById("plans_select").style.display = "inline-block";
+    document.getElementById("text_fam_input").style.display = "inline-block";
+    document.getElementById("placeholder").style.display = "inline-block";
+    document.getElementById("clear").style.display = "inline-block";
+    document.getElementById("submit").style.display = "inline-block";
+    document.getElementById("advanced_button").style.display = "inline-block";
+    document.getElementById("advanced1").style.display = "inline-block";
+    document.getElementById("results_headline").style.display = "none";    
+    document.getElementById("restart_button").style.display =  "none"; 
+    document.getElementById("results_headline").style.display = "none";    
+    document.getElementById("plan1_title").style.display = "none";
+    document.getElementById("plan2_title").style.display = "none";
+    document.getElementById("plan3_title").style.display = "none";
+    document.getElementById("plan4_title").style.display = "none";
+    results_headline.style.display = "none";
 }
 
 function toggleAdvanced() {

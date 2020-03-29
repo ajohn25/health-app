@@ -4,7 +4,8 @@ body{
 
 
     grid-template: 
-        "headline headline" 100px 
+        "headline headline" 50px 
+        "caption caption" 50px
         "input1 input2" 50px
         "input3 input4" 50px
         "input5 input6" 50px
@@ -15,7 +16,7 @@ body{
 }
 
 
-      
+
 
 h1{
     text-align: center;
@@ -26,10 +27,13 @@ h1{
 div[id ="results_headline"] {
     color: black;
     text-align: center; 
-    grid-area:input1;
+    grid-area:caption;
     
 }
 
+textarea{
+    padding: 100px;
+}
 
 
 div[id="income_input"] {
@@ -68,7 +72,7 @@ div[id="clear"] {
 
 }
 
-div[id="advanced"] {
+div[id="advanced_button"] {
     grid-area: input9;
     text-align: center; 
 
@@ -87,6 +91,23 @@ div[id="advanced1"] {
 div[id="fam_input"] {
     grid-area: input5;
     text-align: center; 
-
 }
 
+div[id="restart_button"] {
+    grid-area: input13;
+    padding: 20px;
+}
+
+div[id ="plan_spacer_left"]{
+    grid-area: input3;
+    display: grid;
+    grid-template:
+       "plan1 plan2" ;
+}
+
+div[id ="plan_spacer_right"]{
+    grid-area: input4;
+    display: grid;
+    grid-template:
+       "plan3 plan4" ;
+}
