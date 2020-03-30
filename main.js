@@ -65,4 +65,15 @@ function SelectAll(id)
     document.getElementById(id).select();
 }
 
+var Human = {
+    income: 1000,
+    taxStatus: "Single",
+    plan: "United",
+    famMembers: 1,
+    kids: 0
+};
 
+var Plan = {
+    cost: 1000,
+    covered: true,
+}
