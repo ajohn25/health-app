@@ -12,7 +12,8 @@
 
     <main-view> 
 
-       
+        <script src="main.js"></script>
+
         <h1>HealthCare Calculator</h1>
 
         <div id = "results_headline" style = "display: none;"> 
@@ -21,7 +22,7 @@
         </div>
 
 
-        <script src="main.js"></script>
+        
 
             <div id="income_input" >
             <input id = "text_income_input" type="textarea" style = "width:150px;"  onClick="SelectAll('text_income_input');" value="Enter Your Income (in $)">
@@ -71,16 +72,16 @@
             
             <div id = "submit">
             
-                <button onclick="hideSubmit()"> Submit </button>
+                <button v-on:click ="hideSubmit()"> Submit </button>
             
             </div>
 
             <div id = "clear">
-                <button onclick="clearInputs()"> Start Over </button>
+                <button v-on:click ="clearInputs()"> Start Over </button>
             </div>
 
             <div id = "advanced_button">
-                <button onclick="toggleAdvanced()"> Advanced Options </button>
+                <button v-on:click ="toggleAdvanced()"> Advanced Options </button>
             </div>
 
             <div id = "placeholder">
@@ -94,7 +95,7 @@
            
 
             <div id = "restart_button" style = "display: none;"> 
-                <button onclick="hideRestart()"> Change Your Information </button>
+                <button v-on:click ="hideRestart()"> Change Your Information </button>
             </div>
             
             <div id = "plan_spacer_left"> 
