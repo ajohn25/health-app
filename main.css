@@ -55,13 +55,13 @@ div[id="submit"] {
 }
 
 div[id="insurance_input"] {
-    grid-area: input3;
+    grid-area: input5;
     text-align: center; 
 
 }
 
 div[id="plan_input"] {
-    grid-area: input4;
+    grid-area: input6;
     text-align: center; 
 
 }
@@ -78,8 +78,8 @@ div[id="advanced_button"] {
 
 }
 
-div[id="placeholder"] {
-    grid-area: input6;
+div[id="cost_input"] {
+    grid-area: input4;
     text-align: center;
 }
 
@@ -89,7 +89,7 @@ div[id="advanced1"] {
 }
 
 div[id="fam_input"] {
-    grid-area: input5;
+    grid-area: input3;
     text-align: center; 
 }
 
@@ -99,15 +99,27 @@ div[id="restart_button"] {
 }
 
 div[id ="plan_spacer_left"]{
-    grid-area: input3;
+    grid-area: input5;
     display: grid;
     grid-template:
        "plan1 plan2" ;
 }
 
 div[id ="plan_spacer_right"]{
-    grid-area: input4;
+    grid-area: input6;
     display: grid;
     grid-template:
        "plan3 plan4" ;
+}
+
+
+select,
+select option {
+  color: #000000;
+}
+
+
+select:invalid,
+select option[value=""] {
+  color: #999999;
 }

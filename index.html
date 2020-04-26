@@ -7,7 +7,6 @@
 
     <body>
 
-    <main-view> 
 
        
         <h1>HealthCare Calculator</h1>
@@ -21,48 +20,48 @@
         <script src="main.js"></script>
 
             <div id="income_input" >
-            <input id = "text_income_input" type="textarea" style = "width:150px;"  onClick="SelectAll('text_income_input');" value="Enter Your Income (in $)">
+            <input id = "income_text" type= "number" style = "width:150px;"   placeholder="Enter Total Income ($)">
 
             </div>
 
             <div id="status_input">
-                <select id="status_select">
-                    <option value="Select Your Tax Status">Select Your Tax Status</option>
-                    <option value="Single">Red</option>
-                    <option value="Married">Blue</option>
-                    <option value="Head of Household">United</option>
-                    <option value="Other">Other</option>
+                <select required id="status_select">
+                    <option value="" disabled selected>Select Your Tax Status</option>
+                    <option value="1">Red</option>
+                    <option value="2">Blue</option>
+                    <option value="3">United</option>
+                    <option value="999">Other</option>
                 </select>
             </div>
 
-            <div id="insurance_input">
+            <div id="insurance_input" style = "display: none">
            
                 <select id="providers_select">
-                    <option value="Select Your Insurance Provider">Select Your Insurance Provider</option>
-                    <option value="Red">Red</option>
-                    <option value="Blue">Blue</option>
-                    <option value="United">United</option>
-                    <option value="Other">Other</option>
+                    <option value="" disabled selected>Select Your Insurance Provider</option>
+                    <option value="1">Red</option>
+                    <option value="2">Blue</option>
+                    <option value="3">United</option>
+                    <option value="999">Other</option>
                 </select>
          
             </div>
             
-            <div id="plan_input">
+            <div id="plan_input" style = "display: none">
 
                 <select id="plans_select">
-                    <option value="Select Your Insurance Plan">Select Your Insurance Plan</option>
-                    <option value="Red">Red</option>
-                    <option value="Blue">Blue</option>
-                    <option value="United">United</option>
-                    <option value="Other">Other</option>
+                    <option value="" disabled selected>Select Your Insurance Plan</option>
+                    <option value="1">Red</option>
+                    <option value="2">Blue</option>
+                    <option value="3">United</option>
+                    <option value="999">Other</option>
                 </select>
        
             </div>
             
             <div id="fam_input">
            
-                <input id = "text_fam_input" type="textarea" onClick="SelectAll('text_fam_input');" 
-                    style ="width:250px;" value="How many family members do you have?">
+                <input id = "fam_text" type= "text" 
+                    style ="width:250px;" placeholder ="How many family members do you have?">
          
             </div>
             
@@ -80,15 +79,10 @@
                 <button onclick="toggleAdvanced()"> Advanced Options </button>
             </div>
 
-            <div id = "placeholder">
-                <input id = "placeholder_input" type="textarea"  value="Nothing yet">
+            <div id = "cost_input">
+                <input id = "cost_text" type= "number"  placeholder="Enter current cost ($)">
             </div>
 
-            <div id = "advanced1">
-                <input id = "advanced1_input" type="textarea" style = "display: none;" value ="Advanced 1">
-            </div>
-            
-           
 
             <div id = "restart_button" style = "display: none;"> 
                 <button onclick="hideRestart()"> Change Your Information </button>
@@ -123,8 +117,7 @@
 
             
 
-           
-    </main-view>
+    
     </body>
 </html>
 
