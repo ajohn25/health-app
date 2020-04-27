@@ -15,6 +15,23 @@ body{
         "input13 input14" 50px
 }
 
+form{
+    display:grid;
+
+   grid-area: caption;
+
+
+    grid-template: 
+        
+        "input1 input2" 50px
+        "input3 input4" 50px
+        "input5 input6" 50px
+        "input7 input8" 50px
+        "input9 input10" 50px
+        "input11 input12" 50px
+        "input13 input14" 50px
+        "input15 input16" 50px
+}
 
 
 
@@ -36,65 +53,65 @@ textarea{
 }
 
 
-div[id="income_input"] {
-    grid-area: input1;
+#income_input{
+    grid-area: input3;
     text-align: center; 
 
 }
 
 div[id="status_input"] {
-    grid-area: input2;
+    grid-area: input4;
     text-align: center; 
 
 }
 
 div[id="submit"] {
-    grid-area: input8;
+    grid-area: input10;
     text-align: center; 
 
 }
 
 div[id="insurance_input"] {
-    grid-area: input5;
-    text-align: center; 
-
-}
-
-div[id="plan_input"] {
-    grid-area: input6;
-    text-align: center; 
-
-}
-
-div[id="clear"] {
     grid-area: input7;
     text-align: center; 
 
 }
 
-div[id="advanced_button"] {
+div[id="plan_input"] {
+    grid-area: input8;
+    text-align: center; 
+
+}
+
+div[id="clear"] {
     grid-area: input9;
     text-align: center; 
 
 }
 
+div[id="advanced_button"] {
+    grid-area: input11;
+    text-align: center; 
+
+}
+
 div[id="cost_input"] {
-    grid-area: input4;
+    grid-area: input6;
     text-align: center;
 }
 
 div[id="advanced1"] {
-    grid-area: input11;
+    grid-area: input13;
     text-align: center; 
 }
 
 div[id="fam_input"] {
-    grid-area: input3;
+    grid-area: input5;
     text-align: center; 
 }
 
 div[id="restart_button"] {
-    grid-area: input13;
+    grid-area: input15;
     padding: 20px;
 }
 
