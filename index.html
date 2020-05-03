@@ -7,31 +7,34 @@
 
     <body>
 
-
+        <script src="main.js"></script>
        
         <h1>HealthCare Calculator</h1>
 
-        <div id = "results_headline" style = "display: none;"> 
-            <h2>Here's your results:</h2> 
-            <h2> Medicare for All saves you $1000</h2>
-        </div>
-
-
-        <script src="main.js"></script>
-
+        
             <div id="income_input" >
-            <input id = "income_text" type= "number" style = "width:150px;"   placeholder="Enter Total Income ($)">
+            <input id = "income_text" type= "number" style = "width:200px;"   placeholder="Enter Your Total Income ($)">
 
             </div>
 
             <div id="status_input">
                 <select required id="status_select">
                     <option value="" disabled selected>Select Your Tax Status</option>
-                    <option value="1">Red</option>
-                    <option value="2">Blue</option>
-                    <option value="3">United</option>
-                    <option value="999">Other</option>
+                    <option value="1">Single</option>
+                    <option value="2">Married</option>
                 </select>
+            </div>
+
+            
+            <div id="fam_input">
+           
+                <input id = "fam_text" type= "number" 
+                    style ="width:260px;" placeholder ="How many  members are in your family?">
+         
+            </div>
+
+            <div id = "cost_input">
+                <input id = "cost_text" style ="width:260px;" type= "number"  placeholder="Enter Your Current Insurance Cost ($)">
             </div>
 
             <div id="insurance_input" style = "display: none">
@@ -57,13 +60,9 @@
                 </select>
        
             </div>
+
             
-            <div id="fam_input">
-           
-                <input id = "fam_text" type= "text" 
-                    style ="width:250px;" placeholder ="How many family members do you have?">
-         
-            </div>
+            
             
             <div id = "submit">
             
@@ -79,9 +78,7 @@
                 <button onclick="toggleAdvanced()"> Advanced Options </button>
             </div>
 
-            <div id = "cost_input">
-                <input id = "cost_text" type= "number"  placeholder="Enter current cost ($)">
-            </div>
+          
 
 
             <div id = "restart_button" style = "display: none;"> 
@@ -91,29 +88,30 @@
             <div id = "plan_spacer_left"> 
 
                 <div id = "plan1_title" style = "display: none;">
-                    <h3 align="center"> Plan 1</h3>
+                    <h2 align="center"> Your Plan</h2>
                 </div> 
-                
-                <div id = "plan2_title" style = "display: none;">
-                    <h3 align="center"> Plan 2</h3>
-                </div> 
-                
+            
                 
             </div>
 
             <div id = "plan_spacer_right"> 
 
                  <div id = "plan3_title" style = "display: none;">
-                    <h3 align="center"> Plan 3</h3>
+                    <h2 align="center"> Medicare for All</h2>
                 </div> 
                 
-                <div id = "plan4_title" style = "display: none;" >
-                    <h3 align="center"> Plan 4</h3 >
-                </div> 
+               
             </div>
             
             
-
+            <div id = "results_headline" style = "display: none;"> 
+                <h2 id = results_line>Here's your results:</h2> 
+                <h2 id = savings_line> Medicare for All saves you: 
+                    <script type="text/javascript">
+                      document.write(savings);
+                    </script>
+                </h2>
+            </div>
 
             
 

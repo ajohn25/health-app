@@ -99,19 +99,26 @@ div[id="restart_button"] {
 }
 
 div[id ="plan_spacer_left"]{
-    grid-area: input5;
+    grid-area: input3;
     display: grid;
     grid-template:
-       "plan1 plan2" ;
+       "plan1 plan2 plan3" ;
 }
 
 div[id ="plan_spacer_right"]{
-    grid-area: input6;
+    grid-area: input4;
     display: grid;
     grid-template:
-       "plan3 plan4" ;
+       "plan4 plan5 plan6" ;
 }
 
+div[id = "plan1_title"]{
+    grid-area: plan2;
+}
+
+div[id = "plan3_title"]{
+    grid-area: plan5;
+}
 
 select,
 select option {
