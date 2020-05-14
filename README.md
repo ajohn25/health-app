@@ -11,8 +11,4 @@ Essential Features:
 --Output: Current total cost of insurance, cost under different proposed plans, which one is best?  
 Optional Features:    
 --For those who don’t know, an average cost?  
---For those whose cost goes up, where is that cost going?  
---For those whose cost goes down, what can that go towards instead?  
---Bar Graph display of these    
---National Level cost for national plans Vs. Current total insurance cost on national level  
---Charting trend of costs over time (individual or national?)  
+--Alternate calculations
