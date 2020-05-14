@@ -2,7 +2,6 @@ body{
     display:grid;
     background-color: rgb(55, 141, 141);
 
-
     grid-template: 
         "headline headline" 50px 
         "caption caption" 50px
@@ -15,116 +14,160 @@ body{
         "input13 input14" 50px
 }
 
+textarea{padding: 100px;}
 
-
-
-h1{
+h1
+{
     text-align: center;
     color: blue;
     grid-area:headline;
 }
 
-div[id ="results_headline"] {
+div[id ="results_headline"] 
+{
     color: black;
     text-align: center; 
     grid-area:caption;
-    
 }
 
-textarea{
-    padding: 100px;
-}
-
-
-div[id="income_input"] {
+div[id="income_input"] 
+{
     grid-area: input1;
     text-align: center; 
-
 }
 
-div[id="status_input"] {
+div[id="status_input"] 
+{
     grid-area: input2;
     text-align: center; 
-
 }
 
-div[id="submit"] {
-    grid-area: input8;
+div[id="fam_input"] 
+{
+    grid-area: input3;
     text-align: center; 
-
 }
 
-div[id="insurance_input"] {
-    grid-area: input5;
-    text-align: center; 
-
-}
-
-div[id="plan_input"] {
-    grid-area: input6;
-    text-align: center; 
-
-}
-
-div[id="clear"] {
-    grid-area: input7;
-    text-align: center; 
-
-}
-
-div[id="advanced_button"] {
-    grid-area: input9;
-    text-align: center; 
-
-}
-
-div[id="cost_input"] {
+div[id="cost_input"] 
+{
     grid-area: input4;
     text-align: center;
 }
 
-div[id="advanced1"] {
-    grid-area: input11;
+div[id="insurance_input"] 
+{
+    grid-area: input5;
     text-align: center; 
 }
 
-div[id="fam_input"] {
-    grid-area: input3;
+div[id="plan_input"]
+ {
+    grid-area: input6;
     text-align: center; 
 }
 
-div[id="restart_button"] {
+div[id="clear"] 
+{
+    grid-area: input7;
+    text-align: center; 
+}
+
+div[id="submit"] 
+{
+    grid-area: input8;
+    text-align: center; 
+}
+
+div[id="advanced_button"] 
+{
+    grid-area: input9;
+    text-align: center; 
+}
+/*2nd Page*/
+div[id="restart_button"] 
+{
     grid-area: input13;
     padding: 20px;
 }
 
-div[id ="plan_spacer_left"]{
+div[id ="left_spacer1"]
+{
     grid-area: input3;
     display: grid;
     grid-template:
-       "plan1 plan2 plan3" ;
+       "plan1 plan2 plan3";
 }
 
-div[id ="plan_spacer_right"]{
+div[id ="right_spacer1"]
+{
     grid-area: input4;
     display: grid;
     grid-template:
-       "plan4 plan5 plan6" ;
+       "plan4 plan5 plan6";
 }
 
-div[id = "plan1_title"]{
+div[id ="left_spacer2"]
+{
+    grid-area: input5;
+    display: grid;
+    grid-template:
+       "plan1 plan2 plan3";
+}
+
+div[id ="right_spacer2"]
+{
+    grid-area: input6;
+    display: grid;
+    grid-template:
+       "plan4 plan5 plan6";
+}
+
+div[id = "plan1_title"]
+{
+    grid-area: plan2;
+    color: purple;
+}
+
+div[id = "plan2_title"]
+{
+    grid-area: plan5;
+    color: gold;
+}
+
+div[id = "cost_title"]
+{
+    grid-area: plan1;
+}
+
+div[id = "old_cost"]
+{
     grid-area: plan2;
 }
 
-div[id = "plan3_title"]{
+div[id = "new_cost"]
+{
     grid-area: plan5;
+}
+
+div[id = "your_title"]
+{
+    grid-area: plan2;
+}
+
+div[id = "new_plan_title"]
+{
+    grid-area: plan5;
+}
+/*Colors*/
+div[id = "savings_wrap"]
+{
+    color: gold;
 }
 
 select,
 select option {
   color: #000000;
 }
-
 
 select:invalid,
 select option[value=""] {

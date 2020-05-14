@@ -1,121 +1,109 @@
 <!doctype html>
-
 <html>
     <head>
     <link rel="stylesheet" href ="main.css"/>
     </head>
 
     <body>
-
         <script src="main.js"></script>
-       
+
         <h1>HealthCare Calculator</h1>
+        <!–– Inputs -->
+        <div id="income_input" >
+            <input id = "income_text" type= "number" 
+                   style = "width:200px;"   placeholder="Enter Your Total Income ($)">
+        </div>
 
+        <div id="status_input">
+            <select required id="status_select">
+                <option value="" disabled selected>Select Your Tax Status</option>
+                <option value="1">Single</option>
+                <option value="2">Married</option>
+            </select>
+        </div>
+
+        <div id="fam_input">
+            <input id = "fam_text" type= "number" style ="width:260px;" 
+                   placeholder ="How many  members are in your family?">
+        </div>
+
+        <div id = "cost_input">
+            <input id = "cost_text" style ="width:260px;" type= "number"  
+                   placeholder="Enter Your Current Insurance Cost ($)">
+        </div>
+
+        <div id="insurance_input" style = "display: none">
+            <select id="providers_select">
+                <option value="" disabled selected>Select Your Insurance Provider</option>
+                <option value="1">United Healthcare</option>
+                <option value="2">Blue Cross Blue Shield</option>
+                <option value="3">Cigna</option>
+                <option value="999">Other</option>
+            </select>
+        </div>
         
-            <div id="income_input" >
-            <input id = "income_text" type= "number" style = "width:200px;"   placeholder="Enter Your Total Income ($)">
+        <div id="plan_input" style = "display: none">
+            <select id="plans_select">
+                <option value="" disabled selected>Select Your Insurance Plan</option>
+                <option value="1">Red</option>
+                <option value="2">Blue</option>
+                <option value="3">United</option>
+                <option value="999">Other</option>
+            </select>
+        </div>
+        <!–– Buttons -->
+        <div id = "submit">
+            <button onclick="hideSubmit()"> Submit </button>
+        </div>
 
+        <div id = "clear">
+            <button onclick="clearInputs()"> Start Over </button>
+        </div>
+
+        <div id = "advanced_button">
+            <button onclick="toggleAdvanced()"> Advanced Options </button>
+        </div>
+
+        <div id = "restart_button" style = "display: none;"> 
+            <button onclick="hideRestart()"> Change Your Information </button>
+        </div>
+        <!–– 2nd Page -->
+        <div id = "left_spacer1"> 
+            <div id = "plan1_title" style = "display: none;">
+                <h2 align="center"> Your Plan</h2>
             </div>
+        </div>
 
-            <div id="status_input">
-                <select required id="status_select">
-                    <option value="" disabled selected>Select Your Tax Status</option>
-                    <option value="1">Single</option>
-                    <option value="2">Married</option>
-                </select>
+        <div id = "right_spacer1"> 
+                <div id = "plan2_title" style = "display: none;">
+                <h2 align="center"> Medicare for All</h2>
+            </div> 
+        </div>
+
+        <div id = "left_spacer2">
+            <div id = "cost_title" style = "display: none;">
+                <h2> Cost</h2>
             </div>
-
-            
-            <div id="fam_input">
-           
-                <input id = "fam_text" type= "number" 
-                    style ="width:260px;" placeholder ="How many  members are in your family?">
-         
+            <div id = "old_cost" style = "display: none;">
+                <h2 id = old_cost_line align="center"> $0 </h2>
             </div>
-
-            <div id = "cost_input">
-                <input id = "cost_text" style ="width:260px;" type= "number"  placeholder="Enter Your Current Insurance Cost ($)">
+        </div>
+        
+        <div id = "right_spacer2">
+            <div id = "new_cost" style = "display: none;">
+                <h2 id = new_cost_line align="center"> $0 </h2>
             </div>
+        </div>
+        
+        <div id = "results_headline" style = "display: none;"> 
 
-            <div id="insurance_input" style = "display: none">
-           
-                <select id="providers_select">
-                    <option value="" disabled selected>Select Your Insurance Provider</option>
-                    <option value="1">Red</option>
-                    <option value="2">Blue</option>
-                    <option value="3">United</option>
-                    <option value="999">Other</option>
-                </select>
-         
+            <h2 id = results_line>Here's your results:</h2> 
+
+            <div id = savings_wrap>
+                <h2 id = savings_line> Medicare for All saves you:  </h2>
             </div>
-            
-            <div id="plan_input" style = "display: none">
+        </div>
 
-                <select id="plans_select">
-                    <option value="" disabled selected>Select Your Insurance Plan</option>
-                    <option value="1">Red</option>
-                    <option value="2">Blue</option>
-                    <option value="3">United</option>
-                    <option value="999">Other</option>
-                </select>
-       
-            </div>
-
-            
-            
-            
-            <div id = "submit">
-            
-                <button onclick="hideSubmit()"> Submit </button>
-            
-            </div>
-
-            <div id = "clear">
-                <button onclick="clearInputs()"> Start Over </button>
-            </div>
-
-            <div id = "advanced_button">
-                <button onclick="toggleAdvanced()"> Advanced Options </button>
-            </div>
-
-          
-
-
-            <div id = "restart_button" style = "display: none;"> 
-                <button onclick="hideRestart()"> Change Your Information </button>
-            </div>
-            
-            <div id = "plan_spacer_left"> 
-
-                <div id = "plan1_title" style = "display: none;">
-                    <h2 align="center"> Your Plan</h2>
-                </div> 
-            
-                
-            </div>
-
-            <div id = "plan_spacer_right"> 
-
-                 <div id = "plan3_title" style = "display: none;">
-                    <h2 align="center"> Medicare for All</h2>
-                </div> 
-                
-               
-            </div>
-            
-            
-            <div id = "results_headline" style = "display: none;"> 
-                <h2 id = results_line>Here's your results:</h2> 
-                <h2 id = savings_line> Medicare for All saves you: 
-                    <script type="text/javascript">
-                      document.write(savings);
-                    </script>
-                </h2>
-            </div>
-
-            
-
-    
     </body>
 </html>
 
